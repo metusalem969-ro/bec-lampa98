@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lampa Bec — Aprinde / Stinge</title>
-  <link rel="canonical" href="https://metusalem969-ro.github.io/bec-lampa/">
+  <link rel="canonical" href="https://metusalem969-ro.github.io/lampa-bec/">
   <script>
-    if (/bec-lampa98/i.test(location.pathname)) {
-      location.replace(location.href.replace(/bec-lampa98/gi, 'bec-lampa'));
-    }
+    (function () {
+      if (!/(bec-lampa98|bec-lampa)(\/|$)/i.test(location.pathname)) return;
+      var path = location.pathname.replace(/bec-lampa98|bec-lampa/gi, 'lampa-bec');
+      location.replace(location.origin + path + location.search + location.hash);
+    })();
   </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
